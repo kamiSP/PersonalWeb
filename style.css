@@ -1,87 +1,89 @@
-header {
-    width: 100%;
-	background-color: rgba(255, 255, 255, 0.7);
-    margin: 10pt;
-    margin-bottom: 0;
-    margin-left: 0;
+body{
+    margin: 0;
 }
 
-header > h1{
+#Header{
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    height:650px;
+    /*margin: 10pt;*/
+    margin-bottom: 0;
+    margin-left: 0;
+
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#Header_title{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#Header_title > h1{
 	margin: 0 0 0 0;
-	display: inline-block;
-	font-size: 32pt;
+	font-size: 48pt;
 	font-family: 微軟正黑體;
 	padding: 15px 0 15px 15px;
 }
 
-header > h2{
-    display: -webkit-flex;
+#Header_title > h2{
 	margin: 0 0 0 0;
-	display: inline-block;
 	font-family: 微軟正黑體;
 	font-size: 18pt;
+	padding: 15px 0 15px 15px;
 }
-/*
-#select_bar{
-    position: fixed;
-    margin: 10pt;
-    background-color: rgba(0, 0, 0, 0.2);
-    font-family: Consolas;
+
+/*=================================================*/
+
+#Header_select_bar{
+    font-family: Yu Gothic;
+    font-size: 24pt;
     width: 100%;
-    height: auto;
+    height: 100%;
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
-*/
-#select_bar > ul{
-    display: flex;
+
+#Header_select_bar ul{
+    border-style: solid;
+    border-width: 0 0 0 1px;
     padding-left: 0;
     margin:0 0 10pt 0pt;
+    padding: 10pt 0 10pt 18pt;
     list-style-type: none;
-    overflow: hidden;
     width:100%;
 }
 
-#select_bar > ul li{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-right: 1px solid white;
-    width: 20%;
-    float: left;
+#Header_select_bar ul > li{
+    text-align: left;
+    width: 40%;
 }
 
-#select_bar > ul li:last-child{
-    border: none;
-}
-
-#select_bar > ul li a{
+#Header_select_bar ul > li a{
+    color: rgba(0,0,0,1);
     display: block;
-    font-family: Yu Gothic;
-    font-size: 16pt;
-    color: white;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
 }
 
-#select_bar > ul li a:hover{
-    background-color: rgba(0,255,0,0.5);
+#Header_select_bar ul > li a:hover{
+    background-color: rgba(80,255,80,0.4);
 }
 
-#select_bar > ul li a:active{
+#Header_select_bar ul > li a:active{
     background-color: rgba(0,255,0,0.7);
 }
 
-#main_frame{
-    background-color: rgba(255, 255, 255, 0.5);
-    border-style: none;
-    width: 100%;
-}
-
-#context{
-    font-family: Yu Gothic;
-}
-
-#context > h1{
-    font-size: 24pt;
-}
-
-#context > p{
-    font-size: 18pt;
-}
+/*=================================================*/
